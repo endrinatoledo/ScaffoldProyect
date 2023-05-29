@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "embonor-app",
+    "slug": "embonor-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "embonor-app"
+}
