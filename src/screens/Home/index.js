@@ -1,11 +1,13 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { Button } from "react-native";
+import { HomeScreenContainer, Text } from "./styles";
 
-const Home = () => {
+const Home = ({ navigation }) => {
    return(
-    <View>
+    <HomeScreenContainer>
       <Text>Home</Text>
-    </View>
+      <Button title="Go Back" onPress={() => navigation.goBack()} />
+    </HomeScreenContainer>
     )
 }
 
