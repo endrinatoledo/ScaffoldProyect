@@ -1,11 +1,11 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { LoginScreenContainer, Text } from "./styles";
 
 const LoginScreen = () => {
     return (
-        <View>
+        <LoginScreenContainer>
             <Text>LoginScreen</Text>
-        </View>
+        </LoginScreenContainer>
     );
 };
 

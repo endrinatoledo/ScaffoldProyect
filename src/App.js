@@ -1,19 +1,18 @@
 import React from 'react';
-import Home from '@components/Home';
 import { client } from '../apollo-client';
 import MainContainer from './MainContainer';
-import { StatusBar } from 'expo-status-bar';
 import { ApolloProvider } from '@apollo/client';
 import { StyleSheet, View } from 'react-native';
+import Theme from '@themes';
 
 export default function App() {
   return (
     <ApolloProvider client={client}>
-      <View style={styles.container}>
-        {/* <Home /> */}
-        <MainContainer />
-        <StatusBar style="auto" />
-      </View>
+      <Theme>
+        <View style={styles.container}>
+          <MainContainer />
+        </View>
+      </Theme>
     </ApolloProvider>
   );
 }
@@ -21,8 +20,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'blue',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#ffffff',
   },
 });
