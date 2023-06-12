@@ -6,7 +6,7 @@ const App = () => {
     <View>
       
       <Text>
-        App
+        App11124
       </Text>
       </View>
   )
